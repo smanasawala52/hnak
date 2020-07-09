@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hnak.emis.modal.AttributesModal;
 import com.hnak.emis.modal.CategoryModal;
 import com.hnak.emis.modal.CategoryUIModel;
+import com.hnak.emis.modal.Product;
 import com.hnak.emis.modal.SearchModel;
 
 @Repository
@@ -66,6 +67,8 @@ public class SearchDao {
 				}
 				searchModel.setCategory(cat);
 				searchModel.setAttributes(attributeList);
+				List<Product> products = productDao.getProductsByCategoryRaw(id);
+				searchModel.setProducts(products);
 			}
 			return searchModel;
 		} catch (Exception e) {
