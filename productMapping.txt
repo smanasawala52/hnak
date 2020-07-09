@@ -1,0 +1,102 @@
+PUT /hnak-product-mapping
+{
+  "mappings": {
+    "properties": {
+      "id":    { "type": "keyword" },  
+      "name":   { "type": "text"  } ,
+      "facet" : { "type": "keyword" },
+      "facet_value" : { "type": "keyword" },
+      "filter" : { "type": "keyword" },
+      "filter_value": { "type": "keyword" },
+      "category" : {
+      	"type": "nested",	
+      		"properties": {
+      			"id":    { "type": "keyword" },
+				"name":   { "type": "text"  } ,
+				"parent" : {"type" : "nested"},
+				"children" : {"type" : "nested"}
+				"attributes" : {
+					"type" : "nested",
+					"properties": {
+						"facet_id":    { "type": "nested" },
+						
+					}
+				}
+      	}
+      }   
+    }
+  }
+}
+
+PUT /hnak-product-mapping
+{
+  "mappings": {
+    "properties": {
+      "id":    { "type": "keyword" },  
+      "name":   { "type": "text"  } ,
+      "itemcode":   { "type": "integer" },
+      "barcode":   { "type": "integer" },
+      "category" : { "type": "keyword" },
+		"filter" : 
+     {
+     	"type": "nested",
+     	"properties": 
+     	{
+	     	"name":   { "type": "keyword"  },
+			 "value" : { "type": "keyword"  }
+		  }
+	   }
+    }
+  }
+}
+
+
+{
+  "hnak-category-mapping" : {
+    "mappings" : {
+      "properties" : {
+        "category" : {
+          "type" : "keyword",
+       
+       
+    }
+        }
+       
+    }
+  }
+}
+
+
+
+GET hnak_product_catalog/_search
+{
+    "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "cat": "pant"
+              }
+            },
+            {   "match": {
+                "filter.name": "color"
+              }
+            },
+              {
+                "match": {
+                "filter.value": "red"
+              }
+            },
+            {   "match": {
+                "filter.name": "size"
+              }
+            },
+              {
+                "match": {
+                "filter.value": "20"
+              }
+            }
+          ]
+        }
+    }
+}
