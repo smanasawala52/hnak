@@ -1,8 +1,10 @@
 package com.hnak.elastic.rest.dao;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.commons.validator.GenericValidator;
 import org.elasticsearch.ElasticsearchException;
@@ -119,7 +121,7 @@ public class ProductDao {
 		try {
 			SearchRequest searchRequest = new SearchRequest(prodXrefIndexName);
 			SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-			searchSourceBuilder.query(QueryBuilders.matchAllQuery());
+			searchSourceBuilder.query(QueryBuilders.matchQuery("catId", String.valueOf(id)));
 			searchSourceBuilder.sort(new FieldSortBuilder("_id").unmappedType("String").order(SortOrder.ASC));
 			searchRequest.source(searchSourceBuilder);
 
@@ -129,7 +131,7 @@ public class ProductDao {
 			// response.status().name());
 			// System.out.println("response.status(): " +
 			// response.status().name());
-			List<Product> results = new ArrayList<>();
+			Set<Product> results = new HashSet<>();
 			if (response != null && response.getHits() != null && response.getHits().getHits() != null) {
 				SearchHits searchHits = response.getHits();
 				SearchHit[] hits = searchHits.getHits();
@@ -139,8 +141,10 @@ public class ProductDao {
 							ProductXref productXref = objectMapper.convertValue(hit.getSourceAsMap(),
 									ProductXref.class);
 							if (productXref != null) {
-								Product product = getProductRaw(productXref.getId());
-								results.add(product);
+								Product product = getProductRaw(productXref.getProdId());
+								if (product != null) {
+									results.add(product);
+								}
 							}
 						}
 					} catch (Exception e) {
@@ -148,7 +152,7 @@ public class ProductDao {
 					}
 				}
 			}
-			return results;
+			return new ArrayList<>(results);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

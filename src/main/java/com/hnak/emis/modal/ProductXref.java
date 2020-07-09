@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 public class ProductXref {
 	@Id
 	private int id;
+	private int prodId;
 	private int catId;
 	private int attrId;
 	private int filterId;
@@ -70,5 +71,19 @@ public class ProductXref {
 	 */
 	public void setFilterId(int filterId) {
 		this.filterId = filterId;
+	}
+
+	/**
+	 * @return the prodId
+	 */
+	public int getProdId() {
+		return prodId;
+	}
+
+	/**
+	 * @param prodId the prodId to set
+	 */
+	public void setProdId(int prodId) {
+		this.prodId = prodId;
 	}
 }

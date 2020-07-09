@@ -178,8 +178,8 @@ public class AttributesDao {
 		return attribute;
 	}
 
-	public List<AttributesModal> getAttributesByCategoryRaw(int id) {
-		if (restHighLevelClient == null || id <= 0) {
+	public List<AttributesModal> getAttributesRaw() {
+		if (restHighLevelClient == null) {
 			System.out.println("oops");
 			return null;
 		}
@@ -206,7 +206,13 @@ public class AttributesDao {
 							AttributesModal attr = objectMapper.convertValue(hit.getSourceAsMap(),
 									AttributesModal.class);
 							if (attr != null) {
-								results.add(attr);
+								AttributesModal attrTemp = new AttributesModal();
+								attrTemp.setCode(attr.getCode());
+								attrTemp.setId(attr.getId());
+								attrTemp.setFilters(attr.getFilters());
+								attrTemp.setCategory_id(attr.getCategory_id());
+								attrTemp.setName(attr.getName());
+								results.add(attrTemp);
 							}
 						}
 					} catch (Exception e) {
