@@ -1,9 +1,7 @@
 package com.hnak.elastic.rest.controller;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +40,7 @@ public class AttributesController {
 			attrDesc.put(Locale.en_SA, "Availability");
 			attrDesc.put(Locale.ar_SA, "Availability-Arabic");
 			attributesModel.setName(attrDesc);
+
 			attributesDao.insertAttributes(attributesModel);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -64,6 +63,7 @@ public class AttributesController {
 			attrDesc.put(Locale.en_SA, "Special Price");
 			attrDesc.put(Locale.ar_SA, "Special Price-Arabic");
 			attributesModel.setName(attrDesc);
+
 			attributesDao.insertAttributes(attributesModel);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -86,6 +86,7 @@ public class AttributesController {
 			attrDesc.put(Locale.en_SA, "Brand");
 			attrDesc.put(Locale.ar_SA, "Brand-Arabic");
 			attributesModel.setName(attrDesc);
+
 			attributesDao.insertAttributes(attributesModel);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -108,6 +109,7 @@ public class AttributesController {
 			attrDesc.put(Locale.en_SA, "Length");
 			attrDesc.put(Locale.ar_SA, "Legth-Arabic");
 			attributesModel.setName(attrDesc);
+
 			attributesDao.insertAttributes(attributesModel);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -130,10 +132,128 @@ public class AttributesController {
 			attrDesc.put(Locale.en_SA, "Depth");
 			attrDesc.put(Locale.ar_SA, "Depth-Arabic");
 			attributesModel.setName(attrDesc);
+
 			attributesDao.insertAttributes(attributesModel);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		try {
+			AttributesModal attributesModel = new AttributesModal();
+			attributesModel.setId(6);
+			attributesModel.setLegacyId("6");
+			attributesModel.setActive(true);
+			attributesModel.setAttr_group("Basic Classification");
+			attributesModel.setCategory_id(3);
+			attributesModel.setCode("attr_style");
+			attributesModel.setConfigurable(false);
+			attributesModel.setCreateable(true);
+			attributesModel.setCreatedAt(new Date());
+			attributesModel.setDatatype("String");
+			attributesModel.setEditable(true);
+			attributesModel.setFilterable(false);
+			Map<Locale, String> attrDesc = new HashMap<>();
+			attrDesc.put(Locale.en_SA, "Style");
+			attrDesc.put(Locale.ar_SA, "Style-Arabic");
+			attributesModel.setName(attrDesc);
+
+			attributesDao.insertAttributes(attributesModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			AttributesModal attributesModel = new AttributesModal();
+			attributesModel.setId(7);
+			attributesModel.setLegacyId("7");
+			attributesModel.setCategory_id(10);
+			attributesModel.setActive(true);
+			attributesModel.setAttr_group("Basic Classification");
+			attributesModel.setCode("attr_colorfinish");
+			attributesModel.setConfigurable(false);
+			attributesModel.setCreateable(true);
+			attributesModel.setCreatedAt(new Date());
+			attributesModel.setDatatype("String");
+			attributesModel.setEditable(true);
+			attributesModel.setFilterable(false);
+			Map<Locale, String> attrDesc = new HashMap<>();
+			attrDesc.put(Locale.en_SA, "Color FInish");
+			attrDesc.put(Locale.ar_SA, "Color FInish-Arabic");
+			attributesModel.setName(attrDesc);
+
+			attributesDao.insertAttributes(attributesModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			AttributesModal attributesModel = new AttributesModal();
+			attributesModel.setId(8);
+			attributesModel.setLegacyId("8");
+			attributesModel.setActive(true);
+			attributesModel.setAttr_group("Basic Classification");
+			attributesModel.setCategory_id(12);
+			attributesModel.setCode("attr_seatheightinches");
+			attributesModel.setConfigurable(false);
+			attributesModel.setCreateable(true);
+			attributesModel.setCreatedAt(new Date());
+			attributesModel.setDatatype("String");
+			attributesModel.setEditable(true);
+			attributesModel.setFilterable(false);
+			Map<Locale, String> attrDesc = new HashMap<>();
+			attrDesc.put(Locale.en_SA, "Seat Height Inches");
+			attrDesc.put(Locale.ar_SA, "Seat Height Inches-Arabic");
+			attributesModel.setName(attrDesc);
+
+			attributesDao.insertAttributes(attributesModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			AttributesModal attributesModel = new AttributesModal();
+			attributesModel.setId(9);
+			attributesModel.setLegacyId("9");
+			attributesModel.setCategory_id(2);
+			attributesModel.setActive(true);
+			attributesModel.setAttr_group("More Info");
+			attributesModel.setCode("attr_type");
+			attributesModel.setConfigurable(false);
+			attributesModel.setCreateable(true);
+			attributesModel.setCreatedAt(new Date());
+			attributesModel.setDatatype("String");
+			attributesModel.setEditable(true);
+			attributesModel.setFilterable(false);
+			Map<Locale, String> attrDesc = new HashMap<>();
+			attrDesc.put(Locale.en_SA, "Type");
+			attrDesc.put(Locale.ar_SA, "Type-Arabic");
+			attributesModel.setName(attrDesc);
+
+			attributesDao.insertAttributes(attributesModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			AttributesModal attributesModel = new AttributesModal();
+			attributesModel.setId(10);
+			attributesModel.setLegacyId("10");
+			attributesModel.setCategory_id(5);
+			attributesModel.setActive(true);
+			attributesModel.setAttr_group("More Info");
+			attributesModel.setCode("attr_stackable");
+			attributesModel.setConfigurable(false);
+			attributesModel.setCreateable(true);
+			attributesModel.setCreatedAt(new Date());
+			attributesModel.setDatatype("String");
+			attributesModel.setEditable(true);
+			attributesModel.setFilterable(false);
+			Map<Locale, String> attrDesc = new HashMap<>();
+			attrDesc.put(Locale.en_SA, "Stackable");
+			attrDesc.put(Locale.ar_SA, "Stackable-Arabic");
+			attributesModel.setName(attrDesc);
+
+			attributesDao.insertAttributes(attributesModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	@GetMapping("/insertTempFilters")
@@ -222,6 +342,190 @@ public class AttributesController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(5);
+			filtersModel.setId(7);
+			filtersModel.setLegacyId("7");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Depth inches 15 inches");
+			desc.put(Locale.ar_SA, "Depth inches 15 inches-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(5);
+			filtersModel.setId(8);
+			filtersModel.setLegacyId("8");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Depth inches 25 inches");
+			desc.put(Locale.ar_SA, "Depth inches 25 inches-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(6);
+			filtersModel.setId(9);
+			filtersModel.setLegacyId("9");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Children's Chair");
+			desc.put(Locale.ar_SA, "Children's Chair-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(6);
+			filtersModel.setId(10);
+			filtersModel.setLegacyId("10");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Adult's Chair");
+			desc.put(Locale.ar_SA, "Adult's Chair-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(7);
+			filtersModel.setId(11);
+			filtersModel.setLegacyId("11");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Red");
+			desc.put(Locale.ar_SA, "Red-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(7);
+			filtersModel.setId(12);
+			filtersModel.setLegacyId("12");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Green");
+			desc.put(Locale.ar_SA, "Green-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(7);
+			filtersModel.setId(13);
+			filtersModel.setLegacyId("13");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Blue");
+			desc.put(Locale.ar_SA, "Blue-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(8);
+			filtersModel.setId(14);
+			filtersModel.setLegacyId("14");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "50");
+			desc.put(Locale.ar_SA, "50-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(8);
+			filtersModel.setId(15);
+			filtersModel.setLegacyId("15");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "100");
+			desc.put(Locale.ar_SA, "100-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(9);
+			filtersModel.setId(16);
+			filtersModel.setLegacyId("16");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Classroom Seating");
+			desc.put(Locale.ar_SA, "Classroom Seating-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(9);
+			filtersModel.setId(17);
+			filtersModel.setLegacyId("17");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Office Seating");
+			desc.put(Locale.ar_SA, "Office Seating-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(10);
+			filtersModel.setId(18);
+			filtersModel.setLegacyId("18");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "Yes");
+			desc.put(Locale.ar_SA, "Yes-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			FiltersModal filtersModel = new FiltersModal();
+			filtersModel.setActive(true);
+			filtersModel.setAttributeId(10);
+			filtersModel.setId(19);
+			filtersModel.setLegacyId("19");
+			Map<Locale, String> desc = new HashMap<>();
+			desc.put(Locale.en_SA, "No");
+			desc.put(Locale.ar_SA, "No-Arabic");
+			filtersModel.setDesc(desc);
+			attributesDao.insertFilters(filtersModel);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@GetMapping("/attributesRaw/{id}")
@@ -245,53 +549,4 @@ public class AttributesController {
 		return filter;
 	}
 
-	@GetMapping("/insertTempAttributes2")
-	public void insertTempAttributes2() {
-		attributesDao.deleteAttributes(1);
-		attributesDao.deleteFilters(1);
-		try {
-			AttributesModal attributesModel = new AttributesModal();
-			attributesModel.setId(1);
-			attributesModel.setLegacyId("1");
-			attributesModel.setActive(true);
-			attributesModel.setAttr_group("Basic Classification");
-			attributesModel.setCategory_id(1);
-			attributesModel.setCode("availability");
-			attributesModel.setConfigurable(false);
-			attributesModel.setCreateable(true);
-			attributesModel.setCreatedAt(new Date());
-			attributesModel.setDatatype("String");
-			attributesModel.setEditable(true);
-			attributesModel.setFilterable(false);
-			Map<Locale, String> attrDesc = new HashMap<>();
-			attrDesc.put(Locale.en_SA, "Availability");
-			attrDesc.put(Locale.ar_SA, "Availability-Arabic");
-			attributesModel.setName(attrDesc);
-			List<Integer> filters = new ArrayList<>();
-			filters.add(1);
-			attributesModel.setFilters(filters);
-			System.out.println(attributesModel.getAttr_group());
-			attributesDao.insertAttributes(attributesModel);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	@GetMapping("/insertTempFilters2")
-	public void insertTempFilters2() {
-		try {
-			FiltersModal filtersModel = new FiltersModal();
-			filtersModel.setActive(true);
-			filtersModel.setAttributeId(1);
-			filtersModel.setId(1);
-			filtersModel.setLegacyId("1");
-			Map<Locale, String> desc = new HashMap<>();
-			desc.put(Locale.en_SA, "Ships same day");
-			desc.put(Locale.ar_SA, "Ships same day-Arabic");
-			filtersModel.setDesc(desc);
-			attributesDao.insertFilters(filtersModel);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 }

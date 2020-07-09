@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.validator.GenericValidator;
 import org.elasticsearch.action.admin.indices.get.GetIndexRequest;
 import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.delete.DeleteResponse;
@@ -12,8 +13,16 @@ import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.action.search.SearchRequest;
+import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.SearchHits;
+import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.elasticsearch.search.sort.FieldSortBuilder;
+import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,8 +40,7 @@ public class AttributesDao {
 	private ObjectMapper objectMapper;
 
 	private String attrIndexName = "hnak_attributes";
-	private String filterIndexName = "hnak_attributes";
-	private String catIndexName = "hnak_category";
+	private String filterIndexName = "hnak_filters";
 
 	public AttributesModal insertAttributes(AttributesModal attributesModel) {
 		if (restHighLevelClient == null || attributesModel == null) {
@@ -104,12 +112,9 @@ public class AttributesDao {
 					lst.add(filtersModel.getId());
 					attributeTemp.setFilters(lst);
 				}
-				System.out.println("attribute: " + attributeTemp + " :: " + attributeTemp.getId() + " :: "
-						+ attributeTemp.getFilters());
-				Map inputCategoryTest = objectMapper.convertValue(attributeTemp, Map.class);
-				System.out.println("inputCategoryTest Filter level: " + inputCategoryTest);
-
 				insertAttributes(attribute);
+				filtersModel.setCode(attributeTemp.getCode());
+				filtersModel.setAttributeObj(attributeTemp);
 				Map dataMap = objectMapper.convertValue(filtersModel, Map.class);
 				try {
 					IndexRequest indexRequest = new IndexRequest(filterIndexName)
@@ -171,6 +176,49 @@ public class AttributesDao {
 			}
 		}
 		return attribute;
+	}
+
+	public List<AttributesModal> getAttributesByCategoryRaw(int id) {
+		if (restHighLevelClient == null || id <= 0) {
+			System.out.println("oops");
+			return null;
+		}
+		try {
+			SearchRequest searchRequest = new SearchRequest(attrIndexName);
+			SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+			searchSourceBuilder.query(QueryBuilders.matchAllQuery());
+			searchSourceBuilder.sort(new FieldSortBuilder("_id").unmappedType("String").order(SortOrder.ASC));
+			searchRequest.source(searchSourceBuilder);
+
+			SearchResponse response = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
+			// System.out.println(response);
+			// System.out.println("response.status(): " +
+			// response.status().name());
+			// System.out.println("response.status(): " +
+			// response.status().name());
+			List<AttributesModal> results = new ArrayList<>();
+			if (response != null && response.getHits() != null && response.getHits().getHits() != null) {
+				SearchHits searchHits = response.getHits();
+				SearchHit[] hits = searchHits.getHits();
+				for (SearchHit hit : hits) {
+					try {
+						if (!GenericValidator.isBlankOrNull(hit.getSourceAsString()) && hit.getSourceAsMap() != null) {
+							AttributesModal attr = objectMapper.convertValue(hit.getSourceAsMap(),
+									AttributesModal.class);
+							if (attr != null) {
+								results.add(attr);
+							}
+						}
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+			return results;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 }
