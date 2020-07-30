@@ -1,0 +1,2329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GET_UPDATED_STOCK_WHSE1Response xmlns="http://tempuri.org/">
+            <GET_UPDATED_STOCK_WHSE1Result>
+                <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+                        <xs:complexType>
+                            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                <xs:element name="UPDATED_STOCK1">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="WEB_BUS_UNIT" type="xs:string" minOccurs="0" />
+                                            <xs:element name="WEB_WHSE" type="xs:string" minOccurs="0" />
+                                            <xs:element name="WEB_ITEM" type="xs:string" minOccurs="0" />
+                                            <xs:element name="WEB_ITEM_REV" type="xs:string" minOccurs="0" />
+                                            <xs:element name="WEB_QTY" type="xs:decimal" minOccurs="0" />
+                                            <xs:element name="WEB_READ_DATE" type="xs:string" minOccurs="0" />
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:schema>
+                <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+                    <NewDataSet xmlns="">
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK11" msdata:rowOrder="0">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050400052991</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK12" msdata:rowOrder="1">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100001225</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK13" msdata:rowOrder="2">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180100006481</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>36</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK14" msdata:rowOrder="3">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005052</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK15" msdata:rowOrder="4">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008492</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK16" msdata:rowOrder="5">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200007398</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK17" msdata:rowOrder="6">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200000989</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK18" msdata:rowOrder="7">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100001540</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK19" msdata:rowOrder="8">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001108</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK110" msdata:rowOrder="9">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200011042</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK111" msdata:rowOrder="10">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009492</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK112" msdata:rowOrder="11">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009871</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK113" msdata:rowOrder="12">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005938</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK114" msdata:rowOrder="13">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009480</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK115" msdata:rowOrder="14">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009367</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK116" msdata:rowOrder="15">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000131</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK117" msdata:rowOrder="16">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100000022</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK118" msdata:rowOrder="17">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006668</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK119" msdata:rowOrder="18">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010577</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK120" msdata:rowOrder="19">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009192</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK121" msdata:rowOrder="20">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009368</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK122" msdata:rowOrder="21">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009595</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK123" msdata:rowOrder="22">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200006984</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK124" msdata:rowOrder="23">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>270200000012</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK125" msdata:rowOrder="24">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000140</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK126" msdata:rowOrder="25">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000026</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK127" msdata:rowOrder="26">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050200003724</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK128" msdata:rowOrder="27">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005833</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK129" msdata:rowOrder="28">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000099</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK130" msdata:rowOrder="29">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000128</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK131" msdata:rowOrder="30">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000013</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK132" msdata:rowOrder="31">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000018</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>8</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK133" msdata:rowOrder="32">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000021</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK134" msdata:rowOrder="33">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000029</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK135" msdata:rowOrder="34">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000220</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK136" msdata:rowOrder="35">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000126</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK137" msdata:rowOrder="36">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000142</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK138" msdata:rowOrder="37">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>030700001345</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK139" msdata:rowOrder="38">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180100006479</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>48</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK140" msdata:rowOrder="39">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005537</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK141" msdata:rowOrder="40">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009665</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK142" msdata:rowOrder="41">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009021</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK143" msdata:rowOrder="42">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005247</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK144" msdata:rowOrder="43">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009858</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK145" msdata:rowOrder="44">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001104</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>8</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK146" msdata:rowOrder="45">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100001868</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK147" msdata:rowOrder="46">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100001680</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK148" msdata:rowOrder="47">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010332</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK149" msdata:rowOrder="48">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006445</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK150" msdata:rowOrder="49">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008433</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK151" msdata:rowOrder="50">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009668</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK152" msdata:rowOrder="51">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009750</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK153" msdata:rowOrder="52">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200005803</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK154" msdata:rowOrder="53">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200005380</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK155" msdata:rowOrder="54">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005606</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK156" msdata:rowOrder="55">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010418</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK157" msdata:rowOrder="56">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006314</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK158" msdata:rowOrder="57">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010918</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK159" msdata:rowOrder="58">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200007013</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK160" msdata:rowOrder="59">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070600002551</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK161" msdata:rowOrder="60">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070600001789</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK162" msdata:rowOrder="61">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071200000403</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK163" msdata:rowOrder="62">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070600002454</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK164" msdata:rowOrder="63">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000133</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK165" msdata:rowOrder="64">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000188</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK166" msdata:rowOrder="65">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000202</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK167" msdata:rowOrder="66">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000098</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK168" msdata:rowOrder="67">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000049</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK169" msdata:rowOrder="68">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000179</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK170" msdata:rowOrder="69">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000208</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK171" msdata:rowOrder="70">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000215</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK172" msdata:rowOrder="71">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000122</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK173" msdata:rowOrder="72">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000125</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK174" msdata:rowOrder="73">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000133</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK175" msdata:rowOrder="74">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000139</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK176" msdata:rowOrder="75">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000140</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK177" msdata:rowOrder="76">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000024</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK178" msdata:rowOrder="77">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000185</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK179" msdata:rowOrder="78">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000064</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK180" msdata:rowOrder="79">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010216</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK181" msdata:rowOrder="80">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006657</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK182" msdata:rowOrder="81">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010361</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK183" msdata:rowOrder="82">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005745</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK184" msdata:rowOrder="83">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006252</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK185" msdata:rowOrder="84">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009952</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK186" msdata:rowOrder="85">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005880</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK187" msdata:rowOrder="86">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008253</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK188" msdata:rowOrder="87">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009803</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK189" msdata:rowOrder="88">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006282</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK190" msdata:rowOrder="89">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009365</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK191" msdata:rowOrder="90">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000338</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK192" msdata:rowOrder="91">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010420</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK193" msdata:rowOrder="92">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008113</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK194" msdata:rowOrder="93">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006432</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK195" msdata:rowOrder="94">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010899</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK196" msdata:rowOrder="95">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009366</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK197" msdata:rowOrder="96">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>270600000081</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK198" msdata:rowOrder="97">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000012</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK199" msdata:rowOrder="98">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000122</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1100" msdata:rowOrder="99">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050200003726</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1101" msdata:rowOrder="100">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008520</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1102" msdata:rowOrder="101">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000135</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1103" msdata:rowOrder="102">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200006286</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1104" msdata:rowOrder="103">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>030700001335</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>37</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1105" msdata:rowOrder="104">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031600000127</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1106" msdata:rowOrder="105">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010600006801</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1107" msdata:rowOrder="106">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009831</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1108" msdata:rowOrder="107">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005736</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1109" msdata:rowOrder="108">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005305</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1110" msdata:rowOrder="109">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008491</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1111" msdata:rowOrder="110">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100004957</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1112" msdata:rowOrder="111">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100001681</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1113" msdata:rowOrder="112">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100001538</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1114" msdata:rowOrder="113">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001101</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>9</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1115" msdata:rowOrder="114">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001103</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1116" msdata:rowOrder="115">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010497</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1117" msdata:rowOrder="116">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000322</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1118" msdata:rowOrder="117">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006048</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1119" msdata:rowOrder="118">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006669</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1120" msdata:rowOrder="119">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006313</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1121" msdata:rowOrder="120">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010575</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1122" msdata:rowOrder="121">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>011000000148</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1123" msdata:rowOrder="122">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000515</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1124" msdata:rowOrder="123">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010421</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1125" msdata:rowOrder="124">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200006961</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>20</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1126" msdata:rowOrder="125">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200007001</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1127" msdata:rowOrder="126">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200007014</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1128" msdata:rowOrder="127">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200006986</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>7</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1129" msdata:rowOrder="128">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070400001565</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1130" msdata:rowOrder="129">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071200000620</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1131" msdata:rowOrder="130">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>270400000027</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1132" msdata:rowOrder="131">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>090100004774</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1133" msdata:rowOrder="132">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000127</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1134" msdata:rowOrder="133">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000139</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1135" msdata:rowOrder="134">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000019</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1136" msdata:rowOrder="135">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050200003729</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1137" msdata:rowOrder="136">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000154</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1138" msdata:rowOrder="137">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000058</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1139" msdata:rowOrder="138">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000144</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1140" msdata:rowOrder="139">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000026</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1141" msdata:rowOrder="140">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180100005722</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1142" msdata:rowOrder="141">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031600000126</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>14</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1143" msdata:rowOrder="142">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031600000131</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1144" msdata:rowOrder="143">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180100006306</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>51</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1145" msdata:rowOrder="144">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005827</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1146" msdata:rowOrder="145">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008480</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1147" msdata:rowOrder="146">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000563</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1148" msdata:rowOrder="147">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010367</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1149" msdata:rowOrder="148">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001102</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1150" msdata:rowOrder="149">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001106</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1151" msdata:rowOrder="150">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200005538</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1152" msdata:rowOrder="151">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009682</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1153" msdata:rowOrder="152">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000085</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1154" msdata:rowOrder="153">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200011041</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1155" msdata:rowOrder="154">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005156</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1156" msdata:rowOrder="155">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005973</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1157" msdata:rowOrder="156">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000325</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1158" msdata:rowOrder="157">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010600006323</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>8</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1159" msdata:rowOrder="158">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100004898</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1160" msdata:rowOrder="159">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009045</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1161" msdata:rowOrder="160">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000337</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1162" msdata:rowOrder="161">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010565</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1163" msdata:rowOrder="162">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200007123</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>20</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1164" msdata:rowOrder="163">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200007002</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1165" msdata:rowOrder="164">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200006216</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1166" msdata:rowOrder="165">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070400001685</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1167" msdata:rowOrder="166">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071200000502</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1168" msdata:rowOrder="167">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071200000878</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1169" msdata:rowOrder="168">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071100000952</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1170" msdata:rowOrder="169">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000009</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1171" msdata:rowOrder="170">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000135</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1172" msdata:rowOrder="171">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000064</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1173" msdata:rowOrder="172">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000114</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1174" msdata:rowOrder="173">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050200003728</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1175" msdata:rowOrder="174">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200011047</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1176" msdata:rowOrder="175">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000021</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1177" msdata:rowOrder="176">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000009</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1178" msdata:rowOrder="177">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000127</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1179" msdata:rowOrder="178">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010476</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1180" msdata:rowOrder="179">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031600000128</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>8</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1181" msdata:rowOrder="180">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010600005877</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1182" msdata:rowOrder="181">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010600006377</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1183" msdata:rowOrder="182">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008961</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1184" msdata:rowOrder="183">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200002625</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1185" msdata:rowOrder="184">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005752</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1186" msdata:rowOrder="185">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009951</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1187" msdata:rowOrder="186">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005322</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1188" msdata:rowOrder="187">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005202</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1189" msdata:rowOrder="188">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005919</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1190" msdata:rowOrder="189">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010300000658</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1191" msdata:rowOrder="190">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001099</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>11</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1192" msdata:rowOrder="191">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100001867</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1193" msdata:rowOrder="192">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>039900001105</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>16</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1194" msdata:rowOrder="193">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200011043</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1195" msdata:rowOrder="194">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006053</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1196" msdata:rowOrder="195">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006331</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1197" msdata:rowOrder="196">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009872</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1198" msdata:rowOrder="197">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009371</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1199" msdata:rowOrder="198">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006451</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1200" msdata:rowOrder="199">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009799</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1201" msdata:rowOrder="200">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006431</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1202" msdata:rowOrder="201">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010364</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>11</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1203" msdata:rowOrder="202">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010808</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1204" msdata:rowOrder="203">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010452</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1205" msdata:rowOrder="204">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180200007008</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1206" msdata:rowOrder="205">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071400000469</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1207" msdata:rowOrder="206">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071200000937</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1208" msdata:rowOrder="207">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000011</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1209" msdata:rowOrder="208">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000144</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1210" msdata:rowOrder="209">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000115</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1211" msdata:rowOrder="210">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000019</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1212" msdata:rowOrder="211">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000188</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1213" msdata:rowOrder="212">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000114</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1214" msdata:rowOrder="213">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>100600007851</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1215" msdata:rowOrder="214">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>030200000141</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>8</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1216" msdata:rowOrder="215">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031600000129</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>20</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1217" msdata:rowOrder="216">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005828</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1218" msdata:rowOrder="217">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008981</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1219" msdata:rowOrder="218">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009438</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1220" msdata:rowOrder="219">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005808</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1221" msdata:rowOrder="220">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200004325</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1222" msdata:rowOrder="221">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005677</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1223" msdata:rowOrder="222">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100001930</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1224" msdata:rowOrder="223">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100000994</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>11</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1225" msdata:rowOrder="224">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000323</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1226" msdata:rowOrder="225">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009296</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1227" msdata:rowOrder="226">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010624</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1228" msdata:rowOrder="227">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006414</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1229" msdata:rowOrder="228">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009493</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1230" msdata:rowOrder="229">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009804</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1231" msdata:rowOrder="230">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000084</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1232" msdata:rowOrder="231">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010598</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1233" msdata:rowOrder="232">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000326</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1234" msdata:rowOrder="233">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000327</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1235" msdata:rowOrder="234">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006456</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1236" msdata:rowOrder="235">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009594</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1237" msdata:rowOrder="236">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008606</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1238" msdata:rowOrder="237">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010343</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1239" msdata:rowOrder="238">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005607</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1240" msdata:rowOrder="239">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005608</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1241" msdata:rowOrder="240">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010880</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1242" msdata:rowOrder="241">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009886</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1243" msdata:rowOrder="242">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010451</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1244" msdata:rowOrder="243">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006349</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1245" msdata:rowOrder="244">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008725</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1246" msdata:rowOrder="245">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070400001688</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1247" msdata:rowOrder="246">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070600002452</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1248" msdata:rowOrder="247">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000024</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1249" msdata:rowOrder="248">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050400045588</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1250" msdata:rowOrder="249">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050400056243</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1251" msdata:rowOrder="250">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050400054948</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1252" msdata:rowOrder="251">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>050200003722</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1253" msdata:rowOrder="252">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010234</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1254" msdata:rowOrder="253">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000097</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1255" msdata:rowOrder="254">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000119</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1256" msdata:rowOrder="255">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000014</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1257" msdata:rowOrder="256">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000155</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1258" msdata:rowOrder="257">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000202</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1259" msdata:rowOrder="258">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>180100006437</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>41</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1260" msdata:rowOrder="259">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005796</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1261" msdata:rowOrder="260">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010373</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1262" msdata:rowOrder="261">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010685</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1263" msdata:rowOrder="262">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009518</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1264" msdata:rowOrder="263">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006047</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1265" msdata:rowOrder="264">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010300000659</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1266" msdata:rowOrder="265">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>031100000922</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1267" msdata:rowOrder="266">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006281</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>12</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1268" msdata:rowOrder="267">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200009362</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1269" msdata:rowOrder="268">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200008048</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1270" msdata:rowOrder="269">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010400000546</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1271" msdata:rowOrder="270">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100005862</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1272" msdata:rowOrder="271">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010100006452</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>11</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1273" msdata:rowOrder="272">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010892</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1274" msdata:rowOrder="273">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010300000415</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1275" msdata:rowOrder="274">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200006802</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>6</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1276" msdata:rowOrder="275">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070400001676</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1277" msdata:rowOrder="276">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070300002738</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1278" msdata:rowOrder="277">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>070300002653</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>4</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1279" msdata:rowOrder="278">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>071400000385</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1280" msdata:rowOrder="279">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000126</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1281" msdata:rowOrder="280">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000142</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1282" msdata:rowOrder="281">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000185</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>0</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1283" msdata:rowOrder="282">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>010200010494</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>2</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1284" msdata:rowOrder="283">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000131</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>10</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1285" msdata:rowOrder="284">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081500000163</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>3</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1286" msdata:rowOrder="285">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>081400000023</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>5</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                        <UPDATED_STOCK1 diffgr:id="UPDATED_STOCK1287" msdata:rowOrder="286">
+                            <WEB_BUS_UNIT>8800</WEB_BUS_UNIT>
+                            <WEB_WHSE>W801</WEB_WHSE>
+                            <WEB_ITEM>030400000671</WEB_ITEM>
+                            <WEB_ITEM_REV>0</WEB_ITEM_REV>
+                            <WEB_QTY>-1</WEB_QTY>
+                            <WEB_READ_DATE>20200730083645</WEB_READ_DATE>
+                        </UPDATED_STOCK1>
+                    </NewDataSet>
+                </diffgr:diffgram>
+            </GET_UPDATED_STOCK_WHSE1Result>
+        </GET_UPDATED_STOCK_WHSE1Response>
+    </soap:Body>
+</soap:Envelope>
