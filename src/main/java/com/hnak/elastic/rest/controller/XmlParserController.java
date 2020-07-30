@@ -37,8 +37,8 @@ public class XmlParserController {
 
 	@GetMapping("/getByDateRange/{to}/{from}")
 	@ResponseBody
-	public List<ProductStock> getByDate(@PathVariable("to") String to, @PathVariable("from") String from) {
-		return xmlParserDao.getProductStocksRaw(to, ProductStockType.DATE_RAW);
+	public List<ProductStock> getByDate(@PathVariable("from") String from, @PathVariable("to") String to) {
+		return xmlParserDao.getProductStocksRaw(from + "_" + to, ProductStockType.DATE);
 	}
 
 	@GetMapping("/getAll")

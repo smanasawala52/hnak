@@ -2,7 +2,6 @@ package com.hnak.elastic.rest.dao;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -59,7 +58,7 @@ public class XMLParserDao {
 
 			Map<String, List<ProductStock>> productStockId = new HashMap<>();
 			Map<String, List<ProductStock>> productStockDate = new HashMap<>();
-			Map<Date, List<ProductStock>> productStockDateParsed = new HashMap<>();
+			Map<Long, List<ProductStock>> productStockDateParsed = new HashMap<>();
 
 			for (int temp = 0; temp < nList.getLength(); temp++) {
 				Node nNode = nList.item(temp);
@@ -80,6 +79,7 @@ public class XMLParserDao {
 						if (!GenericValidator.isBlankOrNull(readDateRaw)) {
 							// productStock.setReadDateParsed(new
 							// Date(readDateRaw));
+							productStock.setReadDateParsed(Long.parseLong(readDateRaw));
 						}
 						String qtyRaw = eElement.getElementsByTagName("WEB_QTY").item(0).getTextContent();
 						if (!GenericValidator.isBlankOrNull(qtyRaw)) {
@@ -151,9 +151,13 @@ public class XMLParserDao {
 				if (productStockType == ProductStockType.ID) {
 					searchSourceBuilder.query(QueryBuilders.matchQuery("item", String.valueOf(id)));
 				} else if (productStockType == ProductStockType.DATE_RAW) {
-					searchSourceBuilder.query(QueryBuilders.matchQuery("readDate", String.valueOf(id)));
-				} else if (productStockType == ProductStockType.DATE) {
 					searchSourceBuilder.query(QueryBuilders.matchQuery("readDateParsed", String.valueOf(id)));
+				} else if (productStockType == ProductStockType.DATE) {
+					String from = id.split("_")[1];
+					String to = id.split("_")[0];
+					long lFrom = Long.parseLong(from);
+					long lTo = Long.parseLong(to);
+					searchSourceBuilder.query(QueryBuilders.rangeQuery("readDateParsed").from(lFrom).to(lTo));
 				}
 			}
 			searchRequest1.source(searchSourceBuilder);

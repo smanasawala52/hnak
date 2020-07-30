@@ -1,7 +1,5 @@
 package com.hnak.emis.modal;
 
-import java.util.Date;
-
 import org.springframework.data.annotation.Id;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -15,7 +13,7 @@ public class ProductStock {
 	private String Item;
 	private String itemRev;
 	private String readDate;
-	private Date readDateParsed;
+	private long readDateParsed;
 
 	/**
 	 * @return the id
@@ -110,7 +108,7 @@ public class ProductStock {
 	/**
 	 * @return the readDateParsed
 	 */
-	public Date getReadDateParsed() {
+	public long getReadDateParsed() {
 		return readDateParsed;
 	}
 
@@ -118,7 +116,7 @@ public class ProductStock {
 	 * @param readDateParsed
 	 *            the readDateParsed to set
 	 */
-	public void setReadDateParsed(Date readDateParsed) {
+	public void setReadDateParsed(long readDateParsed) {
 		this.readDateParsed = readDateParsed;
 	}
 
