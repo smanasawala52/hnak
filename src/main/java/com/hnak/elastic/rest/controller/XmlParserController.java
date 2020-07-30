@@ -23,6 +23,17 @@ public class XmlParserController {
 		xmlParserDao.parseXml();
 	}
 
+	@GetMapping("/getXml")
+	public String getXml() {
+		return xmlParserDao.getXml();
+	}
+
+	@GetMapping("/parseXmlOnline")
+	@ResponseBody
+	public void parseXmlOnline() {
+		xmlParserDao.parseXmlOnline();
+	}
+
 	@GetMapping("/getById/{id}")
 	@ResponseBody
 	public List<ProductStock> getById(@PathVariable("id") String id) {

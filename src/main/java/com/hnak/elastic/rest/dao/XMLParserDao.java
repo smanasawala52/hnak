@@ -1,6 +1,8 @@
 package com.hnak.elastic.rest.dao;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -51,6 +53,14 @@ public class XMLParserDao {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(inputFile);
+			processDoc(doc);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void processDoc(Document doc) {
+		try {
 			doc.getDocumentElement().normalize();
 			System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
 			NodeList nList = doc.getElementsByTagName("UPDATED_STOCK1");
@@ -191,6 +201,35 @@ public class XMLParserDao {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public String getXml() {
+		StringBuilder sb = new StringBuilder();
+		try {
+			File inputFile = new File("C:\\test\\hnak\\test.xml");
+			BufferedReader br = new BufferedReader(new FileReader(inputFile));
+			String line = br.readLine();
+			while (line != null) {
+				sb.append(line);
+				line = br.readLine();
+			}
+			br.close();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		return sb.toString();
+	}
+
+	public void parseXmlOnline() {
+		try {
+			File inputFile = new File("C:\\test\\hnak\\test.xml");
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(inputFile);
+			processDoc(doc);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
