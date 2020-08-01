@@ -1,2 +1,2 @@
-hnak_product_cat_attr_filter_xref:8:CLR-1:CLR-1-Arabic
-hnak_product_cat_attr_filter_xref:8:CLR-1:CLR-1-Arabic
+3:18:CLR-SHABBIR:CLR-Shabbir-Arabic
+3:7:Depth-123:Depth-123-Arabic

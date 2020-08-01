@@ -252,11 +252,15 @@ public class ProductDao {
 			return 0;
 		}
 		try {
+			Map dataMap = objectMapper.convertValue(inputMap, Map.class);
 			Map<String, Object> jsonMap = new HashMap<>();
-			jsonMap.put("name", inputMap.get("name"));
+			jsonMap.put("name", dataMap.get("name"));
 			UpdateRequest updateRequest = new UpdateRequest(String.valueOf(inputMap.get("index")),
 					String.valueOf(inputMap.get("id"))).doc(jsonMap);
 			UpdateResponse response = restHighLevelClient.update(updateRequest, RequestOptions.DEFAULT);
+			System.out.println(response);
+			System.out.println(response.getGetResult());
+
 			if (response != null && response.getGetResult() != null) {
 				return 1;
 			}
