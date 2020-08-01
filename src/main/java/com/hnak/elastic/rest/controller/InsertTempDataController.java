@@ -1014,7 +1014,6 @@ public class InsertTempDataController {
 			String line = br.readLine();
 			while (line != null) {
 				try {
-					line = br.readLine();
 					if (!GenericValidator.isBlankOrNull(line)) {
 						System.out.println(line);
 						String[] list = line.split(":");
@@ -1036,6 +1035,7 @@ public class InsertTempDataController {
 				} catch (Exception e) {
 
 				}
+				line = br.readLine();
 			}
 		} catch (
 
