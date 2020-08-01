@@ -1,6 +1,7 @@
 package com.hnak.elastic.rest.dao;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +15,8 @@ import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.action.update.UpdateRequest;
+import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.QueryBuilders;
@@ -241,5 +244,25 @@ public class ProductDao {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public int updateSpecificFields(final Map<String, Object> inputMap) {
+		if (restHighLevelClient == null || inputMap == null) {
+			System.out.println("oops");
+			return 0;
+		}
+		try {
+			Map<String, Object> jsonMap = new HashMap<>();
+			jsonMap.put("name", inputMap.get("name"));
+			UpdateRequest updateRequest = new UpdateRequest(String.valueOf(inputMap.get("index")),
+					String.valueOf(inputMap.get("id"))).doc(jsonMap);
+			UpdateResponse response = restHighLevelClient.update(updateRequest, RequestOptions.DEFAULT);
+			if (response != null && response.getGetResult() != null) {
+				return 1;
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		return 0;
 	}
 }

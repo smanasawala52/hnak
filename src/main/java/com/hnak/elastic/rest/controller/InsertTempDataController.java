@@ -1163,4 +1163,47 @@ public class InsertTempDataController {
 			e.printStackTrace();
 		}
 	}
+
+	@GetMapping("/insertTempProductsRelationsReflectionsRaw")
+	@ResponseBody
+	public void insertTempProductsRelationsReflectionsRaw() {
+		try {
+			String inputFile = "C:\\Users\\smanasawala\\Desktop\\prod-relations-index.txt";
+			BufferedReader br = new BufferedReader(new FileReader(inputFile));
+			String line = br.readLine();
+			while (line != null) {
+				try {
+					if (!GenericValidator.isBlankOrNull(line)) {
+						System.out.println(line);
+						String[] list = line.split(":");
+						String index = list[0];
+						String id = list[1];
+
+						Map<Locale, String> attrDesc = new HashMap<>();
+						String name = list[2];
+						String nameAr = list[3];
+						attrDesc.put(Locale.en_SA, name);
+						attrDesc.put(Locale.ar_SA, nameAr);
+						Map<String, Object> inputMap = new HashMap<>();
+						inputMap.put("name", attrDesc);
+						inputMap.put("index", index);
+						inputMap.put("id", id);
+						int status = productDao.updateSpecificFields(inputMap);
+						if (status == 1) {
+							System.out.println("Success! Row processed: " + line);
+						} else {
+							System.out.println("Error: " + line + " input:" + inputMap);
+						}
+					}
+				} catch (Exception e) {
+
+				}
+				line = br.readLine();
+			}
+		} catch (
+
+		Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

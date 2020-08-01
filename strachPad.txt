@@ -1,0 +1,12 @@
+GET hnak_product_cat_attr_filter_xref\_search
+{
+  "query": {
+    "term": {
+      "id": {
+        "value": "8",
+        "boost": 1.0
+      }
+    }
+  }
+}
+GET hnak_category\_search
