@@ -1,11 +1,15 @@
 package com.hnak.elastic.rest.controller;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.validator.GenericValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -999,6 +1003,45 @@ public class InsertTempDataController {
 			e.printStackTrace();
 		}
 
+	}
+
+	@GetMapping("/insertTempProductsRelationsReflections")
+	@ResponseBody
+	public void insertTempProductsRelationsReflections() {
+		try {
+			String inputFile = "C:\\Users\\smanasawala\\Desktop\\prod-relations.txt";
+			BufferedReader br = new BufferedReader(new FileReader(inputFile));
+			String line = br.readLine();
+			while (line != null) {
+				try {
+					line = br.readLine();
+					if (!GenericValidator.isBlankOrNull(line)) {
+						System.out.println(line);
+						String[] list = line.split(":");
+						String id = list[0];
+						String filterId = list[1];
+						List<ProductXref> productXrefs = productDao.getProductXrefsRawByProduct(Integer.parseInt(id),
+								Integer.parseInt(filterId));
+						if (!CollectionUtils.isEmpty(productXrefs)) {
+							ProductXref productXref = productXrefs.get(0);
+							Map<Locale, String> attrDesc = new HashMap<>();
+							String name = list[2];
+							String nameAr = list[3];
+							attrDesc.put(Locale.en_SA, name);
+							attrDesc.put(Locale.ar_SA, nameAr);
+							productXref.setName(attrDesc);
+							productDao.insertProductXref(productXref);
+						}
+					}
+				} catch (Exception e) {
+
+				}
+			}
+		} catch (
+
+		Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@GetMapping("/insertTempProductsRelations")

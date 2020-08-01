@@ -104,7 +104,7 @@ public class ProductDao {
 		return null;
 	}
 
-	public List<ProductXref> getProductXrefsRawByProduct(int id) {
+	public List<ProductXref> getProductXrefsRawByProduct(int id, int filterId) {
 		if (restHighLevelClient == null || id == 0) {
 			System.out.println("oops");
 			return null;
@@ -113,6 +113,9 @@ public class ProductDao {
 			SearchRequest searchRequest = new SearchRequest(prodXrefIndexName);
 			SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
 			searchSourceBuilder.query(QueryBuilders.matchQuery("prodId", String.valueOf(id)));
+			if (filterId > 0) {
+				searchSourceBuilder.query(QueryBuilders.matchQuery("filterId", String.valueOf(filterId)));
+			}
 			searchSourceBuilder.sort(new FieldSortBuilder("_id").unmappedType("String").order(SortOrder.ASC));
 			searchRequest.source(searchSourceBuilder);
 
@@ -215,7 +218,7 @@ public class ProductDao {
 				productUIModel.setId(id);
 				productUIModel.setProduct(product);
 				List<FilterUIModel> filters = new ArrayList<>();
-				List<ProductXref> productXrefs = getProductXrefsRawByProduct(id);
+				List<ProductXref> productXrefs = getProductXrefsRawByProduct(id, 0);
 				for (ProductXref productXref : productXrefs) {
 					FiltersModal filterObjs = attributesDao.getFiltersRaw(productXref.getFilterId());
 					if (filterObjs != null && filterObjs.getAttributeObj() != null) {
