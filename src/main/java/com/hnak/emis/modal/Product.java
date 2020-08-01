@@ -13,7 +13,6 @@ public class Product {
 	@Id
 	private int id;
 	private String name;
-
 	@Field(type = FieldType.Nested)
 	private List<CategoryModal> categories;
 
@@ -40,4 +39,5 @@ public class Product {
 	public void setCategories(List<CategoryModal> categories) {
 		this.categories = categories;
 	}
+
 }

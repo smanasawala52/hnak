@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hnak.elastic.rest.dao.ProductDao;
 import com.hnak.emis.modal.Product;
+import com.hnak.emis.modal.ProductUIModel;
 import com.hnak.emis.modal.ProductXref;
 
 @RestController
@@ -37,6 +38,13 @@ public class ProductController {
 	public Product getProductRaw(@PathVariable("id") String id) {
 		Product productXref = productDao.getProductRaw(Integer.parseInt(id));
 		return productXref;
+	}
+
+	@GetMapping("/product/{id}")
+	@ResponseBody
+	public ProductUIModel getProduct(@PathVariable("id") String id) {
+		ProductUIModel productUIModel = productDao.getProduct(Integer.parseInt(id));
+		return productUIModel;
 	}
 
 }

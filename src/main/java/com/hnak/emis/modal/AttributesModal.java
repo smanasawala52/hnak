@@ -6,7 +6,7 @@ import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class AttributesModal extends AbstractHnakModel {
+public class AttributesModal extends AbstractHnakModel implements Cloneable {
 	// `attr_id` int(11) NOT NULL AUTO_INCREMENT,
 	// `legacy_id` varchar(45) NOT NULL,
 	// `code` varchar(45) NOT NULL,

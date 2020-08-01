@@ -3,6 +3,7 @@ package com.hnak.elastic.rest.dao;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,6 +32,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hnak.emis.modal.ProductStock;
@@ -226,6 +228,8 @@ public class XMLParserDao {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(inputFile);
+			doc = dBuilder.parse(new InputSource(new StringReader("")));
+			doc = dBuilder.parse(inputFile);
 			processDoc(doc);
 		} catch (Exception e) {
 			e.printStackTrace();

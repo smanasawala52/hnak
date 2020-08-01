@@ -1,5 +1,7 @@
 package com.hnak.emis.modal;
 
+import java.util.Map;
+
 import org.springframework.data.annotation.Id;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -11,6 +13,7 @@ public class ProductXref {
 	private int prodId;
 	private int catId;
 	private int attrId;
+	private Map<Locale, String> name;
 	private int filterId;
 
 	/**
@@ -81,9 +84,18 @@ public class ProductXref {
 	}
 
 	/**
-	 * @param prodId the prodId to set
+	 * @param prodId
+	 *            the prodId to set
 	 */
 	public void setProdId(int prodId) {
 		this.prodId = prodId;
+	}
+
+	public Map<Locale, String> getName() {
+		return name;
+	}
+
+	public void setName(Map<Locale, String> name) {
+		this.name = name;
 	}
 }

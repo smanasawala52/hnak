@@ -26,7 +26,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hnak.emis.modal.FilterUIModel;
+import com.hnak.emis.modal.FiltersModal;
+import com.hnak.emis.modal.Locale;
 import com.hnak.emis.modal.Product;
+import com.hnak.emis.modal.ProductUIModel;
 import com.hnak.emis.modal.ProductXref;
 
 @Repository
@@ -34,6 +38,9 @@ public class ProductDao {
 
 	@Autowired
 	private RestHighLevelClient restHighLevelClient;
+
+	@Autowired
+	private AttributesDao attributesDao;
 
 	@Autowired
 	private ObjectMapper objectMapper;
@@ -97,6 +104,43 @@ public class ProductDao {
 		return null;
 	}
 
+	public List<ProductXref> getProductXrefsRawByProduct(int id) {
+		if (restHighLevelClient == null || id == 0) {
+			System.out.println("oops");
+			return null;
+		}
+		try {
+			SearchRequest searchRequest = new SearchRequest(prodXrefIndexName);
+			SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+			searchSourceBuilder.query(QueryBuilders.matchQuery("prodId", String.valueOf(id)));
+			searchSourceBuilder.sort(new FieldSortBuilder("_id").unmappedType("String").order(SortOrder.ASC));
+			searchRequest.source(searchSourceBuilder);
+
+			SearchResponse response = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
+			List<ProductXref> results = new ArrayList<>();
+			if (response != null && response.getHits() != null && response.getHits().getHits() != null) {
+				SearchHits searchHits = response.getHits();
+				SearchHit[] hits = searchHits.getHits();
+				for (SearchHit hit : hits) {
+					try {
+						if (!GenericValidator.isBlankOrNull(hit.getSourceAsString()) && hit.getSourceAsMap() != null) {
+							ProductXref attr = objectMapper.convertValue(hit.getSourceAsMap(), ProductXref.class);
+							if (attr != null) {
+								results.add(attr);
+							}
+						}
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+			return results;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 	public Product getProductRaw(int id) {
 		if (restHighLevelClient == null || id == 0) {
 			System.out.println("oops");
@@ -154,6 +198,43 @@ public class ProductDao {
 			}
 			return new ArrayList<>(results);
 		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public ProductUIModel getProduct(int id) {
+		if (restHighLevelClient == null || id == 0) {
+			System.out.println("oops");
+			return null;
+		}
+		try {
+			Product product = getProductRaw(id);
+			ProductUIModel productUIModel = new ProductUIModel();
+			if (product != null && product.getId() > 0) {
+				productUIModel.setId(id);
+				productUIModel.setProduct(product);
+				List<FilterUIModel> filters = new ArrayList<>();
+				List<ProductXref> productXrefs = getProductXrefsRawByProduct(id);
+				for (ProductXref productXref : productXrefs) {
+					FiltersModal filterObjs = attributesDao.getFiltersRaw(productXref.getFilterId());
+					if (filterObjs != null && filterObjs.getAttributeObj() != null) {
+						Map<Locale, String> name = filterObjs.getAttributeObj().getName();
+						if (productXref.getName() != null) {
+							name = productXref.getName();
+						}
+						filterObjs.getAttributeObj().setName(name);
+						FilterUIModel filter = new FilterUIModel();
+						filter.setFilterObjs(filterObjs);
+						filters.add(filter);
+					}
+				}
+				productUIModel.setFilters(filters);
+				return productUIModel;
+			}
+		} catch (
+
+		Exception e) {
 			e.printStackTrace();
 		}
 		return null;

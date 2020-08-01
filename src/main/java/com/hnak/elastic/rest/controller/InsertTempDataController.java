@@ -1089,6 +1089,10 @@ public class InsertTempDataController {
 			productXref.setCatId(5);
 			productXref.setAttrId(10);
 			productXref.setFilterId(18);
+			Map<Locale, String> attrDesc = new HashMap<>();
+			attrDesc.put(Locale.en_SA, "CLR");
+			attrDesc.put(Locale.ar_SA, "CLR-Arabic");
+			productXref.setName(attrDesc);
 			productDao.insertProductXref(productXref);
 		} catch (Exception e) {
 			e.printStackTrace();
