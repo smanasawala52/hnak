@@ -97,6 +97,7 @@ public class SearchDao {
 			SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
 			searchSourceBuilder.sort(new FieldSortBuilder("_id").unmappedType("String").order(SortOrder.ASC));
 			searchSourceBuilder.query(QueryBuilders.matchQuery("category_id", String.valueOf(id)));
+			// searchSourceBuilder.suggest(QueryBuilders.match);
 			searchRequest1.source(searchSourceBuilder);
 
 			MultiSearchRequest request = new MultiSearchRequest();
@@ -145,5 +146,30 @@ public class SearchDao {
 		}
 		return null;
 	}
+	// q=synmoe, acrynome, keyword, category, text (description), attribute
+	// primary key, item code, category id,
+
+	// category_id=1
+	// /c/mobile/
+	// search/q=(keyword)
+
+	// /c/mobile?p=color=red~size=10~size=12
+	// /p/pid
+	// search/q=(keyword)
+	// search?q=(keyword)&p=color=red~size=10~size=12
+
+	// query param, filter - cat_1=mobile
+
+	// collection 1) product 2) productXref
+	// /c/mobile -> get cate id = mobile -> category id + list of products
+	// having category
+
+	// pid -> [123,234,456]
+
+	// url -> cat id -> categoryTree(category collection)
+	// cat id -> list pid (pxref) => pids -> list of products (products
+	// collection)
+	// cat id -> list attr id (pxref) => facet/filters -> list of facet and
+	// Filters (attributes collection)
 
 }

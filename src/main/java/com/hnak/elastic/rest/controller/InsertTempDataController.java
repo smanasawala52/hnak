@@ -1009,7 +1009,7 @@ public class InsertTempDataController {
 	@ResponseBody
 	public void insertTempProductsRelationsReflections() {
 		try {
-			String inputFile = "C:\\test\\hnak\\prod-relations.txt";
+			String inputFile = "D:\\Test\\hnak\\prod-relations.txt";
 			BufferedReader br = new BufferedReader(new FileReader(inputFile));
 			String line = br.readLine();
 			while (line != null) {
@@ -1168,7 +1168,7 @@ public class InsertTempDataController {
 	@ResponseBody
 	public void insertTempProductsRelationsReflectionsRaw() {
 		try {
-			String inputFile = "C:\\test\\hnak\\prod-relations-index.txt";
+			String inputFile = "D:\\Test\\hnak\\prod-relations-index.txt";
 			BufferedReader br = new BufferedReader(new FileReader(inputFile));
 			String line = br.readLine();
 			while (line != null) {
